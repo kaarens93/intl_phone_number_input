@@ -24,7 +24,7 @@ class Item extends StatelessWidget {
           //         package: 'intl_phone_number_input',
           //       )
           //     : SizedBox.shrink(),
-          SizedBox(width: 12.0),
+          // SizedBox(width: 12.0),
           Text(
             '${country?.dialCode ?? ''}',
             textDirection: TextDirection.ltr,
