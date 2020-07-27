@@ -50,18 +50,11 @@ class SelectorButton extends StatelessWidget {
                 country: country,
                 textStyle: selectorTextStyle,
               )
-<<<<<<< HEAD
         : MaterialButton(
             key: Key(TestHelper.DropdownButtonKeyValue),
             padding: EdgeInsets.zero,
             minWidth: 0,
             onPressed: countries.isNotEmpty && countries.length > 1
-=======
-        : InkWell(
-            key: Key(TestHelper.DropdownButtonKeyValue),
-            // padding: EdgeInsetsDirectional.only(start: 12, end: 4),
-            onTap: countries.isNotEmpty && countries.length > 1
->>>>>>> 676d9fbeaa70f7a02cbfc20ffc03c50e3c77a568
                 ? () async {
                     Country selected;
                     if (selectorType == PhoneInputSelectorType.BOTTOM_SHEET) {
