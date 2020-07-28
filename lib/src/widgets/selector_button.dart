@@ -51,6 +51,8 @@ class SelectorButton extends StatelessWidget {
                 textStyle: selectorTextStyle,
               )
         : MaterialButton(
+            splashColor: Colors.transparent,
+            highlightColor: Colors.transparent,
             key: Key(TestHelper.DropdownButtonKeyValue),
             padding: EdgeInsets.zero,
             minWidth: 0,
@@ -70,12 +72,9 @@ class SelectorButton extends StatelessWidget {
                     }
                   }
                 : null,
-            child: Padding(
-              padding: const EdgeInsets.only(right: 8.0),
-              child: Item(
-                country: country,
-                textStyle: selectorTextStyle,
-              ),
+            child: Item(
+              country: country,
+              textStyle: selectorTextStyle,
             ),
           );
   }
@@ -101,6 +100,8 @@ class SelectorButton extends StatelessWidget {
       context: context,
       barrierDismissible: true,
       builder: (BuildContext context) => AlertDialog(
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(10.0))),
         content: Container(
           width: double.maxFinite,
           child: CountrySearchListWidget(

@@ -349,6 +349,7 @@ class _InputWidgetState extends State<InternationalPhoneNumberInput> {
   InputDecoration getInputDecoration(InputDecoration decoration) {
     return decoration ??
         InputDecoration(
+          isDense: true,
           border: widget.inputBorder ?? UnderlineInputBorder(),
           hintText: widget.hintText,
         );

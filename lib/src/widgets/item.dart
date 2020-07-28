@@ -28,6 +28,7 @@ class Item extends StatelessWidget {
           Text(
             '${country?.dialCode ?? ''}',
             textDirection: TextDirection.ltr,
+            // style: TextStyle(fontSize: 16)
             style: textStyle,
           ),
         ],

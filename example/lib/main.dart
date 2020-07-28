@@ -115,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
   final TextEditingController controller = TextEditingController();
-  String initialCountry = 'NG';
+  String initialCountry = 'US';
 
   @override
   Widget build(BuildContext context) {
@@ -126,6 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             InternationalPhoneNumberInput(
+              selectorTextStyle: TextStyle(fontSize: 16),
               onInputChanged: (PhoneNumber number) {
                 print(number.phoneNumber);
               },
@@ -134,9 +135,9 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               ignoreBlank: true,
               autoValidate: false,
-              initialValue: PhoneNumber(isoCode: 'NG'),
+              // initialValue: PhoneNumber(isoCode: 'US'),
               textFieldController: controller,
-              inputBorder: OutlineInputBorder(),
+              // inputBorder: OutlineInputBorder(),
               selectorType: PhoneInputSelectorType.DIALOG,
             ),
             RaisedButton(

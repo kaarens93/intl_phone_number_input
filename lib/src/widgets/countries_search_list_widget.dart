@@ -34,7 +34,9 @@ class _CountrySearchListWidgetState extends State<CountrySearchListWidget> {
 
   InputDecoration getSearchBoxDecoration() {
     return widget.searchBoxDecoration ??
-        InputDecoration(labelText: 'Search by country name or dial code');
+        InputDecoration(
+          isDense: true,
+          labelText: 'Search by country name or dial code');
   }
 
   List<Country> filterCountries() {
